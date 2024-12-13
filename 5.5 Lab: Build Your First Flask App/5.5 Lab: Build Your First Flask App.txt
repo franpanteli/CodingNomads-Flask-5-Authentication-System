@@ -1,0 +1,40 @@
+-> Build Your First Flask App Lesson  
+   -> Lab: Build Your First Flask App  
+   -> 3 min to complete  
+   -> By Brandon Gigous  
+
+-> Prerequisites  
+   -> Ensure that you have cloned the Python Flask labs project before starting this lab  
+   -> Open the cloned project folder in VS Code to begin working  
+
+-> Learn by Doing  
+   -> 1. Start by navigating to the labs project folder on your computer  
+   -> 2. Open the folder in VS Code and examine the lab instructions inside the folder  
+   -> 3. Follow the instructions provided in the folder step-by-step to build your first Flask app  
+   -> 4. If you're subscribed to the membership or mentorship programs, don't hesitate to reach out on Discord for a review or any guidance  
+   -> 5. If you need help, you can ask for clarifications on the implementation or any challenges you encounter while working on the lab  
+
+-> Version Control and Collaboration  
+   -> 6. Upon completing the lab, it's critical to push your work to GitHub to track your progress and maintain version control  
+   -> 7. Pushing your project to GitHub ensures that your work is properly stored and that you can collaborate with others or revisit it in the future  
+   -> 8. Version control tools like Git and GitHub are widely used in software engineering to manage and maintain code effectively  
+   -> 9. GitHub serves not only as a backup for your work but also as a way to showcase your progress and skills to potential employers  
+   -> 10. Engineers use GitHub to collaborate on open-source projects, contribute to teams, and review code changes through pull requests  
+
+-> Why is GitHub Important?  
+   -> 11. GitHub is used ubiquitously across engineering companies and software teams, making familiarity with it an essential skill  
+   -> 12. It helps you track and manage changes, allowing you to revert to previous versions or manage multiple branches for different features  
+   -> 13. GitHub also provides the platform for collaboration, enabling you to work with others, share code, and contribute to projects  
+
+-> Proving Your Work with GitHub  
+   -> 14. Always remember to push your completed work to GitHub – it demonstrates your consistency and proficiency with version control  
+   -> 15. By pushing your code, you also gain the opportunity to review your contribution graphs and statistics on GitHub, which are useful for reflecting on your development and engagement in coding projects  
+
+-> Contribution Graphs  
+   -> 16. Viewing the contribution graphs on your GitHub profile can give you insight into how often you’re committing to projects and making progress  
+   -> 17. These graphs serve as a visual representation of your commitment to coding, and consistently pushing code helps build your coding reputation  
+   -> 18. Potential employers or collaborators often look at these graphs as indicators of an applicant’s activity level and dedication  
+
+-> Conclusion  
+   -> 19. We recommend that you don’t skip the GitHub step – it's an essential habit to develop as a software engineer  
+   -> 20. It provides a portfolio of your work, improves your coding practice, and ensures that you’re engaged in modern software development processes  

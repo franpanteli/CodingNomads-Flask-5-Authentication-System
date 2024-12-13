@@ -1,0 +1,93 @@
+-> Build Your First Flask App Lesson  
+   -> How to Build a Flask Hello World App  
+   -> 13 min to complete  
+   -> By Brandon Gigous  
+
+-> Introduction to Flask Hello World App  
+   -> After completing the previous steps for setting up Flask, it's time to create your very first Flask application  
+   -> This lesson will guide you step by step through the process of building a simple Flask Hello World app, which will serve as the foundation for all your future Flask web development projects  
+   -> By the end of this lesson, you will understand key Flask concepts such as routing, handling requests, and running a Flask application in development mode  
+
+-> Flask Hello World App Setup  
+   -> Open your text editor or IDE (e.g., VS Code) and navigate to your project directory  
+      -> In VS Code, you can do this by selecting `File -> Open Folder` and choosing your `flask-webdev` folder  
+      -> Ensure your virtual environment is activated before proceeding  
+   -> If the terminal window in VS Code isn't already in the correct directory, navigate to it using the `cd` command  
+      -> For example:  
+         -> `cd ~/Documents/CodingNomads/projects/flask-webdev`  
+   -> Once you're in the right folder and the virtual environment is activated, create a new Python file for your Flask app  
+      -> Name this file `hello.py`  
+
+-> Write the Code  
+   -> In your `hello.py` file, type the following code blocks in sequence to set up your first Flask app  
+
+-> Initialisation  
+   -> First, import the Flask class from the `flask` module, which will allow you to create a Flask application instance  
+      -> The Flask object needs the name of the main module or package, which can be passed as `__name__`. This helps Flask locate the associated templates and static files in the app directory  
+   -> Here's the code to initialise the Flask app:  
+      ```python  
+      from flask import Flask  
+      app = Flask(__name__)  
+      ```  
+      -> The `Flask(__name__)` line creates an instance of the Flask class, which will be used to define routes, handle requests, and configure the app  
+
+-> Routing  
+   -> Next, you will define a route. Routes in Flask map URLs to functions, allowing you to specify what happens when a user visits a particular URL in their browser  
+   -> In this example, we will set up the root URL (`/`) of the web app, which will trigger the function `index()` when visited  
+   -> Here's how to add routing using a Flask decorator:  
+      ```python  
+      @app.route('/')  
+      def index():  
+          return "Hello Web World!"  
+      ```  
+   -> The `@app.route('/')` decorator tells Flask to call the `index()` function whenever the root URL is accessed  
+   -> This function will simply return the string `"Hello Web World!"` when the page is visited  
+
+-> What about `app.run()`?  
+   -> At this point, your Flask application is ready, but you're probably wondering how to run it as a web app  
+   -> In Flask, the `app.run()` function is typically used to start the web server and run the application  
+   -> However, Flask provides a more convenient way to run the app using the command line interface (CLI) instead of calling `app.run()` directly in the Python file  
+
+-> Set the Flask App Environment Variable  
+   -> Before running the Flask application, you need to set an environment variable so Flask knows which file contains the application instance  
+   -> You can do this by running the following command in your terminal:  
+      ```bash  
+      export FLASK_APP=hello.py  
+      ```  
+   -> This command tells Flask that the `hello.py` file contains the app to run  
+   -> Without setting the `FLASK_APP` variable, Flask won't know which Python file to execute  
+
+-> Run Your Flask Hello World App  
+   -> With the environment variable set, you can now run the Flask app by executing the following command in your terminal:  
+      ```bash  
+      flask run  
+      ```  
+   -> This will start the Flask development server, and you should see output like this:  
+      ```bash  
+      * Serving Flask app "hello.py"  
+      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)  
+      ```  
+   -> Open a web browser and visit `http://127.0.0.1:5000/`, and you should see the message `"Hello Web World!"` displayed on the page  
+
+-> Run Flask for Development Mode  
+   -> By default, Flask runs in "production" mode, which is not suitable for development as it doesn't provide features like automatic reloading of code or detailed error messages  
+   -> To run Flask in development mode, set the `FLASK_ENV` environment variable by running the following command:  
+      ```bash  
+      export FLASK_ENV=development  
+      ```  
+   -> This will enable development mode and allow Flask to reload the server automatically whenever you make changes to your code  
+
+-> Enable Debug Mode  
+   -> Debug mode is a valuable feature that helps during development by providing detailed error messages and automatically restarting the Flask server when you modify your code  
+   -> To enable debug mode, you need to set the `FLASK_DEBUG` environment variable:  
+      ```bash  
+      export FLASK_DEBUG=1  
+      ```  
+   -> Once enabled, Flask will automatically reload the application when you make changes to your source files  
+   -> It will also display errors in the browser, allowing you to inspect the issue and fix it quickly  
+
+-> Summary: How to Build a Flask Hello World App  
+   -> You've now built a basic Flask Hello World app that demonstrates how to initialise a Flask application, define routes, and run the app in development mode  
+   -> The next steps in Flask development will involve adding more functionality, such as working with forms, templates, and databases  
+   -> Keep in mind the importance of environment variables like `FLASK_APP`, `FLASK_ENV`, and `FLASK_DEBUG` for configuring your Flask app and running it in the appropriate environment  
+   -> In the next lesson, you will learn about URLs and routing in more detail, which will allow you to create more complex and dynamic web applications  
