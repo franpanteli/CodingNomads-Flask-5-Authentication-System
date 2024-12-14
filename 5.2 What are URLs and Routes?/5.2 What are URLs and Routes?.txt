@@ -1,7 +1,5 @@
 -> Build Your First Flask App Lesson  
    -> What are URLs and Routes?  
-   -> 11 min to complete  
-   -> By Brandon Gigous  
 
 -> Introduction  
    -> In this lesson, you will take a deeper look at some of the fundamental building blocks of the web that Flask leverages to function: URLs and routes  
@@ -9,21 +7,21 @@
 
 -> What is a URL?  
    -> URL stands for Uniform Resource Locator, which is a formal name for what we commonly refer to as a web address  
-   -> A URL is how you specify a location for a resource on the internet, whether itÕs a webpage, image, or file  
+   -> A URL is how you specify a location for a resource on the internet, whether it's a webpage, image, or file  
    -> A URL generally consists of several components:  
       -> Protocol: This specifies how the request should be made (e.g., `http://` or `https://`)  
       -> Host: The domain name of the server handling the request (e.g., `example.com`)  
       -> Path: The specific resource on the server you are requesting (e.g., `/about`, `/contact`)  
 
 -> Requests and Responses  
-   -> A userÕs browser sends a request to the web server when they visit a URL  
+   -> A user's browser sends a request to the web server when they visit a URL  
    -> The request asks for a specific resource identified by the URL path  
    -> For instance, if a user goes to `http://example.com/about`, their browser sends a request asking for the "About" page  
    -> The server processes the request and returns a response, which could be a webpage, image, or data (e.g., JSON)  
    -> Think of it like a game of sending a message (request) through a tin-can phone, where the server responds back with the requested information  
 
 -> Paths  
-   -> The path in the URL specifies the location of the resource youÕre requesting from the server  
+   -> The path in the URL specifies the location of the resource you're requesting from the server  
    -> For example, in `http://example.com/about`, the path is `/about`  
    -> If you visit `http://example.com/`, the path is `/`, representing the root or home page  
    -> Paths are critical because they tell the server exactly where to find the requested resource in the application code  
@@ -63,7 +61,7 @@
    -> Flask uses Jinja templating (to be covered in later lessons) to dynamically generate HTML responses, making it easy to create complex, data-driven webpages  
 
 -> Summary: What are URLs and Routes?  
-   -> URL stands for Uniform Resource Locator, and itÕs a web address used to locate a resource on the internet  
+   -> URL stands for Uniform Resource Locator, and it's a web address used to locate a resource on the internet  
    -> A URL has three main parts:  
       -> The protocol (`http://` or `https://`)  
       -> The host (domain name, e.g., `example.com`)  

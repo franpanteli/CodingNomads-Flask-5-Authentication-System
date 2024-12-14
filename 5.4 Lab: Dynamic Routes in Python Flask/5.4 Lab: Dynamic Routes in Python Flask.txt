@@ -1,7 +1,5 @@
 -> Build Your First Flask Apps Lesson  
    -> Lab: Dynamic Routes in Python Flask  
-   -> 3 min to complete  
-   -> By Brandon Gigous  
 
 -> Introduction  
    -> In this lesson, you will dive into dynamic routes, an essential concept in Flask for creating web pages that adapt based on the data provided in the URL  
@@ -29,7 +27,7 @@
      ```  
    -> In this example:  
       -> When a user visits `localhost:5000/user/Tom`, Flask captures the `Tom` part of the URL and passes it as the `username` parameter to the `user()` function  
-      -> The function then processes the `username` and returns a personalized message, `"Hello, Tom!"`  
+      -> The function then processes the `username` and returns a personalised message, `"Hello, Tom!"`  
    -> This process allows the same route (`/user/<username>`) to dynamically handle different content based on the URL parameter  
 
 -> Understanding Dynamic Path Components  
@@ -46,7 +44,7 @@
       -> `<path:filename>`: Matches a path, including slashes  
 
 -> Example of Dynamic Routes with Different Converters  
-   -> You can define routes that capture different types of data using FlaskÕs built-in converters  
+   -> You can define routes that capture different types of data using Flaskï¿½s built-in converters  
    -> Example with an integer converter:  
      ```python  
      @app.route('/post/<int:post_id>')  
@@ -71,7 +69,7 @@
       -> Experiment with spaces in dynamic arguments (Flask automatically handles URL encoding, so spaces will be replaced with `%20` in the URL)  
 
 -> Example Code for Multiple Dynamic Arguments  
-   -> HereÕs an example of how to handle two dynamic arguments in a single route  
+   -> Hereï¿½s an example of how to handle two dynamic arguments in a single route  
      ```python  
      @app.route('/user/<name>/<int:age>')  
      def user_info(name, age):  

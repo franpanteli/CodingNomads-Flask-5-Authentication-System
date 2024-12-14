@@ -1,7 +1,5 @@
 -> Build Your First Flask App Lesson  
    -> How to Build a Flask Hello World App  
-   -> 13 min to complete  
-   -> By Brandon Gigous  
 
 -> Introduction to Flask Hello World App  
    -> After completing the previous steps for setting up Flask, it's time to create your very first Flask application  

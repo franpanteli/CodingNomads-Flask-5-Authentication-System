@@ -1,7 +1,5 @@
 -> Build Your First Flask App Lesson  
    -> Lab: Build Your First Flask App  
-   -> 3 min to complete  
-   -> By Brandon Gigous  
 
 -> Prerequisites  
    -> Ensure that you have cloned the Python Flask labs project before starting this lab  
@@ -27,14 +25,14 @@
    -> 13. GitHub also provides the platform for collaboration, enabling you to work with others, share code, and contribute to projects  
 
 -> Proving Your Work with GitHub  
-   -> 14. Always remember to push your completed work to GitHub Ð it demonstrates your consistency and proficiency with version control  
+   -> 14. Always remember to push your completed work to GitHub ' it demonstrates your consistency and proficiency with version control  
    -> 15. By pushing your code, you also gain the opportunity to review your contribution graphs and statistics on GitHub, which are useful for reflecting on your development and engagement in coding projects  
 
 -> Contribution Graphs  
-   -> 16. Viewing the contribution graphs on your GitHub profile can give you insight into how often youÕre committing to projects and making progress  
+   -> 16. Viewing the contribution graphs on your GitHub profile can give you insight into how often you're committing to projects and making progress  
    -> 17. These graphs serve as a visual representation of your commitment to coding, and consistently pushing code helps build your coding reputation  
-   -> 18. Potential employers or collaborators often look at these graphs as indicators of an applicantÕs activity level and dedication  
+   -> 18. Potential employers or collaborators often look at these graphs as indicators of an applicant's activity level and dedication  
 
 -> Conclusion  
-   -> 19. We recommend that you donÕt skip the GitHub step Ð it's an essential habit to develop as a software engineer  
-   -> 20. It provides a portfolio of your work, improves your coding practice, and ensures that youÕre engaged in modern software development processes  
+   -> 19. We recommend that you don't skip the GitHub step ' it's an essential habit to develop as a software engineer  
+   -> 20. It provides a portfolio of your work, improves your coding practice, and ensures that you're engaged in modern software development processes  

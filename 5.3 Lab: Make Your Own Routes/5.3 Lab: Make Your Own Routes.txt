@@ -1,7 +1,5 @@
 -> 5) Build Your First Flask Apps Lesson  
 -> Lab: Make Your Own Routes  
--> 3 min to complete  
--> By Brandon Gigous  
 
 -> Alright Flask cadet, it's time for your first mission  
 -> If you choose to accept, your mission is to define three routes in your Flask application  
@@ -14,7 +12,7 @@
    -> (b) a mini bio of yourself  
 -> This route will help you get familiar with returning simple HTML content from a view function  
 
--> 2. The second route shall be for a page that lists your favorite songs  
+-> 2. The second route shall be for a page that lists your favourite songs  
 -> This page should showcase a list of songs you enjoy  
 -> Use some basic HTML elements to make it look somewhat pretty!  
 -> Consider using the following tags:  
@@ -26,11 +24,11 @@
 -> Experiment with styling to make the page visually appealing, and make sure to test the route to ensure it displays correctly  
 
 -> 3. The third route shall be for a page that has a link to the two other pages set forth above  
--> This page will serve as a navigation hub, allowing users to easily access both the "about" page and the "favorite songs" page  
+-> This page will serve as a navigation hub, allowing users to easily access both the "about" page and the "Favourite songs" page  
 -> On this page, create a link to both the `/about` and `/songs` routes using the <a> tag  
 -> Your link will be in the form:  
    -> <a href="/about">About Page</a>  
-   -> <a href="/songs">Favorite Songs Page</a>  
+   -> <a href="/songs">Favourite Songs Page</a>  
 -> This route will teach you how to link different pages in your Flask app, providing a simple navigation experience for users  
 
 -> If you haven't already, now's a good time to make your first <a> tag  
