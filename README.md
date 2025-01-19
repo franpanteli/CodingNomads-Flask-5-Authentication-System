@@ -1,6 +1,6 @@
 # CodingNomads-Flask-5-Authentication-System
 ## Repository File Tree
-This repository contains my work for the 16th module in the [Coding Nomads Flask Web Framework](https://codingnomads.com/course/python-flask-web-framework) course. I completed this 21-module course as part of my independent learning, to invest in my Python skills. I produced an in-depth library of resources on this module, whose file tree is provided below. 
+This repository contains my work for the 5th module in the [Coding Nomads Flask Web Framework](https://codingnomads.com/course/python-flask-web-framework) course. I completed this 21-module course as part of my independent learning, to invest in my Python skills. I produced an in-depth library of resources on this module, whose file tree is provided below. 
 
 <img width="753" alt="Screenshot 2025-01-19 at 15 37 38" src="https://github.com/user-attachments/assets/2813b0e5-e3c5-4676-b106-914a07e267a6" />
 
