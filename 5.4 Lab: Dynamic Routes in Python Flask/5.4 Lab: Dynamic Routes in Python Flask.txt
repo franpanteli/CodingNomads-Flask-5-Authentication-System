@@ -1,91 +1,91 @@
--> Build Your First Flask Apps Lesson  
-   -> Lab: Dynamic Routes in Python Flask  
+-> build your first flask apps lesson  
+   -> lab: dynamic routes in python flask  
 
--> Introduction  
-   -> In this lesson, you will dive into dynamic routes, an essential concept in Flask for creating web pages that adapt based on the data provided in the URL  
-   -> Dynamic routes enable you to pass variables from the URL directly into your view functions, allowing for more flexible and interactive web applications  
-   -> The concept is commonly used for things like user profiles, product pages, or blog posts, where the content changes based on the identifier in the URL  
+-> introduction  
+   -> in this lesson, you will dive into dynamic routes, an essential concept in flask for creating web pages that adapt based on the data provided in the url  
+   -> dynamic routes enable you to pass variables from the url directly into your view functions, allowing for more flexible and interactive web applications  
+   -> the concept is commonly used for things like user profiles, product pages, or blog posts, where the content changes based on the identifier in the url  
 
--> What are Dynamic Routes?  
-   -> Dynamic routes allow parts of the URL path to be treated as variables that you can use in your code  
-   -> This is useful for scenarios where multiple pages share a similar structure but display different content based on a unique identifier  
-   -> For example:  
+-> what are dynamic routes?  
+   -> dynamic routes allow parts of the url path to be treated as variables that you can use in your code  
+   -> this is useful for scenarios where multiple pages share a similar structure but display different content based on a unique identifier  
+   -> for example:  
       -> `www.example.com/user/random_guy`  
       -> `www.example.com/user/someones_grandma`  
-      -> `www.example.com/user/Tom`  
-   -> All these URLs follow a similar pattern (`/user/<username>`) but dynamically load content based on the specific `username` in the URL  
-   -> In Flask, dynamic components are denoted by surrounding the variable part of the path with angle brackets (`< >`)  
-   -> The dynamic part of the path is passed as a parameter to the corresponding view function  
+      -> `www.example.com/user/tom`  
+   -> all these urls follow a similar pattern (`/user/<username>`) but dynamically load content based on the specific `username` in the url  
+   -> in flask, dynamic components are denoted by surrounding the variable part of the path with angle brackets (`< >`)  
+   -> the dynamic part of the path is passed as a parameter to the corresponding view function  
 
--> How to Code Dynamic Routes  
-   -> To define a dynamic route, use the `@app.route()` decorator with angle brackets to specify the dynamic part of the URL  
-   -> Example:  
+-> how to code dynamic routes  
+   -> to define a dynamic route, use the `@app.route()` decorator with angle brackets to specify the dynamic part of the url  
+   -> example:  
      ```python  
      @app.route('/user/<username>')  
      def user(username):  
-         return f"Hello, {username}!"  
+         return f"hello, {username}!"  
      ```  
-   -> In this example:  
-      -> When a user visits `localhost:5000/user/Tom`, Flask captures the `Tom` part of the URL and passes it as the `username` parameter to the `user()` function  
-      -> The function then processes the `username` and returns a personalised message, `"Hello, Tom!"`  
-   -> This process allows the same route (`/user/<username>`) to dynamically handle different content based on the URL parameter  
+   -> in this example:  
+      -> when a user visits `localhost:5000/user/tom`, flask captures the `tom` part of the url and passes it as the `username` parameter to the `user()` function  
+      -> the function then processes the `username` and returns a personalised message, `"hello, tom!"`  
+   -> this process allows the same route (`/user/<username>`) to dynamically handle different content based on the url parameter  
 
--> Understanding Dynamic Path Components  
-   -> In Flask, you can define dynamic paths that accept different types of variables  
-   -> The dynamic part of the URL is the content placed within the angle brackets  
-   -> For example:  
+-> understanding dynamic path components  
+   -> in flask, you can define dynamic paths that accept different types of variables  
+   -> the dynamic part of the url is the content placed within the angle brackets  
+   -> for example:  
      -> `/user/<username>` captures a string as `username`  
      -> `/post/<int:post_id>` captures an integer as `post_id`  
-     -> Flask can automatically convert the URL segment into the specified type, such as a string, integer, float, or path  
-   -> Flask supports the following converters:  
-      -> `<string:name>`: Matches any string (excluding slashes)  
-      -> `<int:id>`: Matches an integer  
-      -> `<float:price>`: Matches a floating-point number  
-      -> `<path:filename>`: Matches a path, including slashes  
+     -> flask can automatically convert the url segment into the specified type, such as a string, integer, float, or path  
+   -> flask supports the following converters:  
+      -> `<string:name>`: matches any string (excluding slashes)  
+      -> `<int:id>`: matches an integer  
+      -> `<float:price>`: matches a floating-point number  
+      -> `<path:filename>`: matches a path, including slashes  
 
--> Example of Dynamic Routes with Different Converters  
-   -> You can define routes that capture different types of data using Flask�s built-in converters  
-   -> Example with an integer converter:  
+-> example of dynamic routes with different converters  
+   -> you can define routes that capture different types of data using flask’s built-in converters  
+   -> example with an integer converter:  
      ```python  
      @app.route('/post/<int:post_id>')  
      def show_post(post_id):  
-         return f"Displaying post {post_id}"  
+         return f"displaying post {post_id}"  
      ```  
-   -> In this example, Flask expects an integer for `post_id` and will pass that value to the `show_post()` function  
-   -> Example with a path converter:  
+   -> in this example, flask expects an integer for `post_id` and will pass that value to the `show_post()` function  
+   -> example with a path converter:  
      ```python  
      @app.route('/files/<path:filename>')  
      def download_file(filename):  
-         return f"Downloading file: {filename}"  
+         return f"downloading file: {filename}"  
      ```  
-   -> This route handles URLs like `/files/images/photo.jpg` and passes the full path (`images/photo.jpg`) to the `download_file()` function  
+   -> this route handles urls like `/files/images/photo.jpg` and passes the full path (`images/photo.jpg`) to the `download_file()` function  
 
--> Learn by Doing  
-   -> Now try creating dynamic routes based on the following suggestions to practice:  
-      -> Create a route that accepts two dynamic arguments (e.g., `name` and `age`), then displays a message with both parameters  
-        Example: `/greet/<name>/<int:age>`  
-      -> Create a route that accepts a numeric argument (e.g., a post ID) and returns the square of that number  
-        Example: `/square/<int:number>`  
-      -> Experiment with spaces in dynamic arguments (Flask automatically handles URL encoding, so spaces will be replaced with `%20` in the URL)  
+-> learn by doing  
+   -> now try creating dynamic routes based on the following suggestions to practice:  
+      -> create a route that accepts two dynamic arguments (e.g., `name` and `age`), then displays a message with both parameters  
+        example: `/greet/<name>/<int:age>`  
+      -> create a route that accepts a numeric argument (e.g., a post id) and returns the square of that number  
+        example: `/square/<int:number>`  
+      -> experiment with spaces in dynamic arguments (flask automatically handles url encoding, so spaces will be replaced with `%20` in the url)  
 
--> Example Code for Multiple Dynamic Arguments  
-   -> Here�s an example of how to handle two dynamic arguments in a single route  
+-> example code for multiple dynamic arguments  
+   -> here’s an example of how to handle two dynamic arguments in a single route  
      ```python  
      @app.route('/user/<name>/<int:age>')  
      def user_info(name, age):  
-         return f"User: {name}, Age: {age}"  
+         return f"user: {name}, age: {age}"  
      ```  
-   -> In this example, when you visit `localhost:5000/user/Tom/25`, the response will be `"User: Tom, Age: 25"`  
+   -> in this example, when you visit `localhost:5000/user/tom/25`, the response will be `"user: tom, age: 25"`  
 
--> Summary: Python Flask Dynamic Routes  
-   -> Dynamic routes allow you to create flexible URLs that capture parts of the path as variables  
-   -> These variables are passed to view functions, enabling you to generate dynamic content based on the URL  
-   -> To define a dynamic route, use `@app.route()` with angle brackets around the dynamic part of the path  
-   -> Flask supports different types of dynamic path components, including `string`, `int`, `float`, and `path` converters  
-   -> Example code for dynamic route with a string argument:  
+-> summary: python flask dynamic routes  
+   -> dynamic routes allow you to create flexible urls that capture parts of the path as variables  
+   -> these variables are passed to view functions, enabling you to generate dynamic content based on the url  
+   -> to define a dynamic route, use `@app.route()` with angle brackets around the dynamic part of the path  
+   -> flask supports different types of dynamic path components, including `string`, `int`, `float`, and `path` converters  
+   -> example code for dynamic route with a string argument:  
      ```python  
      @app.route('/user/<username>')  
      def user(username):  
-         return f"Hello, {username}!"  
+         return f"hello, {username}!"  
      ```  
-   -> Dynamic routes are useful for creating pages like user profiles, product pages, or posts that change based on the parameters in the URL  
+   -> dynamic routes are useful for creating pages like user profiles, product pages, or posts that change based on the parameters in the url  

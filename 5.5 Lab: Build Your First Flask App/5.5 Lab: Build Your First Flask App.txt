@@ -1,38 +1,38 @@
--> Build Your First Flask App Lesson  
-   -> Lab: Build Your First Flask App  
+-> build your first flask app lesson  
+   -> lab: build your first flask app  
 
--> Prerequisites  
-   -> Ensure that you have cloned the Python Flask labs project before starting this lab  
-   -> Open the cloned project folder in VS Code to begin working  
+-> prerequisites  
+   -> ensure that you have cloned the python flask labs project before starting this lab  
+   -> open the cloned project folder in vs code to begin working  
 
--> Learn by Doing  
-   -> 1. Start by navigating to the labs project folder on your computer  
-   -> 2. Open the folder in VS Code and examine the lab instructions inside the folder  
-   -> 3. Follow the instructions provided in the folder step-by-step to build your first Flask app  
-   -> 4. If you're subscribed to the membership or mentorship programs, don't hesitate to reach out on Discord for a review or any guidance  
-   -> 5. If you need help, you can ask for clarifications on the implementation or any challenges you encounter while working on the lab  
+-> learn by doing  
+   -> 1. start by navigating to the labs project folder on your computer  
+   -> 2. open the folder in vs code and examine the lab instructions inside the folder  
+   -> 3. follow the instructions provided in the folder step-by-step to build your first flask app  
+   -> 4. if you're subscribed to the membership or mentorship programs, don't hesitate to reach out on discord for a review or any guidance  
+   -> 5. if you need help, you can ask for clarifications on the implementation or any challenges you encounter while working on the lab  
 
--> Version Control and Collaboration  
-   -> 6. Upon completing the lab, it's critical to push your work to GitHub to track your progress and maintain version control  
-   -> 7. Pushing your project to GitHub ensures that your work is properly stored and that you can collaborate with others or revisit it in the future  
-   -> 8. Version control tools like Git and GitHub are widely used in software engineering to manage and maintain code effectively  
-   -> 9. GitHub serves not only as a backup for your work but also as a way to showcase your progress and skills to potential employers  
-   -> 10. Engineers use GitHub to collaborate on open-source projects, contribute to teams, and review code changes through pull requests  
+-> version control and collaboration  
+   -> 6. upon completing the lab, it's critical to push your work to github to track your progress and maintain version control  
+   -> 7. pushing your project to github ensures that your work is properly stored and that you can collaborate with others or revisit it in the future  
+   -> 8. version control tools like git and github are widely used in software engineering to manage and maintain code effectively  
+   -> 9. github serves not only as a backup for your work but also as a way to showcase your progress and skills to potential employers  
+   -> 10. engineers use github to collaborate on open-source projects, contribute to teams, and review code changes through pull requests  
 
--> Why is GitHub Important?  
-   -> 11. GitHub is used ubiquitously across engineering companies and software teams, making familiarity with it an essential skill  
-   -> 12. It helps you track and manage changes, allowing you to revert to previous versions or manage multiple branches for different features  
-   -> 13. GitHub also provides the platform for collaboration, enabling you to work with others, share code, and contribute to projects  
+-> why is github important?  
+   -> 11. github is used ubiquitously across engineering companies and software teams, making familiarity with it an essential skill  
+   -> 12. it helps you track and manage changes, allowing you to revert to previous versions or manage multiple branches for different features  
+   -> 13. github also provides the platform for collaboration, enabling you to work with others, share code, and contribute to projects  
 
--> Proving Your Work with GitHub  
-   -> 14. Always remember to push your completed work to GitHub ' it demonstrates your consistency and proficiency with version control  
-   -> 15. By pushing your code, you also gain the opportunity to review your contribution graphs and statistics on GitHub, which are useful for reflecting on your development and engagement in coding projects  
+-> proving your work with github  
+   -> 14. always remember to push your completed work to github ' it demonstrates your consistency and proficiency with version control  
+   -> 15. by pushing your code, you also gain the opportunity to review your contribution graphs and statistics on github, which are useful for reflecting on your development and engagement in coding projects  
 
--> Contribution Graphs  
-   -> 16. Viewing the contribution graphs on your GitHub profile can give you insight into how often you're committing to projects and making progress  
-   -> 17. These graphs serve as a visual representation of your commitment to coding, and consistently pushing code helps build your coding reputation  
-   -> 18. Potential employers or collaborators often look at these graphs as indicators of an applicant's activity level and dedication  
+-> contribution graphs  
+   -> 16. viewing the contribution graphs on your github profile can give you insight into how often you're committing to projects and making progress  
+   -> 17. these graphs serve as a visual representation of your commitment to coding, and consistently pushing code helps build your coding reputation  
+   -> 18. potential employers or collaborators often look at these graphs as indicators of an applicant's activity level and dedication  
 
--> Conclusion  
-   -> 19. We recommend that you don't skip the GitHub step ' it's an essential habit to develop as a software engineer  
-   -> 20. It provides a portfolio of your work, improves your coding practice, and ensures that you're engaged in modern software development processes  
+-> conclusion  
+   -> 19. we recommend that you don't skip the github step ' it's an essential habit to develop as a software engineer  
+   -> 20. it provides a portfolio of your work, improves your coding practice, and ensures that you're engaged in modern software development processes

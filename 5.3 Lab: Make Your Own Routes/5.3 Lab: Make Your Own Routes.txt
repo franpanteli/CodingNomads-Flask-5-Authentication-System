@@ -1,46 +1,46 @@
--> 5) Build Your First Flask Apps Lesson  
--> Lab: Make Your Own Routes  
+-> 5) build your first flask apps lesson  
+-> lab: make your own routes  
 
--> Alright Flask cadet, it's time for your first mission  
--> If you choose to accept, your mission is to define three routes in your Flask application  
+-> alright flask cadet, it's time for your first mission  
+-> if you choose to accept, your mission is to define three routes in your flask application  
 
--> Learn by Doing  
--> 1. The first route shall be for an "about" page that was shown in the last lesson  
--> This page should provide some content that gives visitors information about you or the website  
--> For this lab, write a blurb about either:  
+-> learn by doing  
+-> 1. the first route shall be for an "about" page that was shown in the last lesson  
+-> this page should provide some content that gives visitors information about you or the website  
+-> for this lab, write a blurb about either:  
    -> (a) what you hope to get out of this course, or  
    -> (b) a mini bio of yourself  
--> This route will help you get familiar with returning simple HTML content from a view function  
+-> this route will help you get familiar with returning simple html content from a view function  
 
--> 2. The second route shall be for a page that lists your favourite songs  
--> This page should showcase a list of songs you enjoy  
--> Use some basic HTML elements to make it look somewhat pretty!  
--> Consider using the following tags:  
+-> 2. the second route shall be for a page that lists your favourite songs  
+-> this page should showcase a list of songs you enjoy  
+-> use some basic html elements to make it look somewhat pretty!  
+-> consider using the following tags:  
    -> <ul> (unordered list)  
    -> <li> (list item)  
    -> <strong> (for strong emphasis)  
    -> <em> (for emphasis)  
-   -> Add some header tags like <h2> and <h3> to introduce sections or make parts of your list stand out  
--> Experiment with styling to make the page visually appealing, and make sure to test the route to ensure it displays correctly  
+   -> add some header tags like <h2> and <h3> to introduce sections or make parts of your list stand out  
+-> experiment with styling to make the page visually appealing, and make sure to test the route to ensure it displays correctly  
 
--> 3. The third route shall be for a page that has a link to the two other pages set forth above  
--> This page will serve as a navigation hub, allowing users to easily access both the "about" page and the "Favourite songs" page  
--> On this page, create a link to both the `/about` and `/songs` routes using the <a> tag  
--> Your link will be in the form:  
-   -> <a href="/about">About Page</a>  
-   -> <a href="/songs">Favourite Songs Page</a>  
--> This route will teach you how to link different pages in your Flask app, providing a simple navigation experience for users  
+-> 3. the third route shall be for a page that has a link to the two other pages set forth above  
+-> this page will serve as a navigation hub, allowing users to easily access both the "about" page and the "favourite songs" page  
+-> on this page, create a link to both the `/about` and `/songs` routes using the <a> tag  
+-> your link will be in the form:  
+   -> <a href="/about">about page</a>  
+   -> <a href="/songs">favourite songs page</a>  
+-> this route will teach you how to link different pages in your flask app, providing a simple navigation experience for users  
 
--> If you haven't already, now's a good time to make your first <a> tag  
--> The <a> tag allows users to click on a link and navigate to another page within your Flask app  
+-> if you haven't already, now's a good time to make your first <a> tag  
+-> the <a> tag allows users to click on a link and navigate to another page within your flask app  
 
 -> <li> <strong> <em> <h2> <h3>  
--> These HTML tags will enhance the readability and presentation of your routes' content  
+-> these html tags will enhance the readability and presentation of your routes' content  
 
--> Once you've defined your routes and tested them, commit your changes using git  
--> Make sure your Flask application is running and accessible through your local server at `http://localhost:5000/`  
+-> once you've defined your routes and tested them, commit your changes using git  
+-> make sure your flask application is running and accessible through your local server at `http://localhost:5000/`  
 
 -> git commit  
--> After completing this lab, you will have hands-on experience with defining and linking multiple routes in Flask, as well as a better understanding of how to manage navigation between different pages in a web application  
+-> after completing this lab, you will have hands-on experience with defining and linking multiple routes in flask, as well as a better understanding of how to manage navigation between different pages in a web application  
 
--> Previous Next Lab: Dynamic Routes in Python Flask  
+-> previous next lab: dynamic routes in python flask  

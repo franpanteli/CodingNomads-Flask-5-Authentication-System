@@ -1,79 +1,79 @@
--> Build Your First Flask App Lesson  
-   -> What are URLs and Routes?  
+-> build your first flask app lesson  
+   -> what are urls and routes?  
 
--> Introduction  
-   -> In this lesson, you will take a deeper look at some of the fundamental building blocks of the web that Flask leverages to function: URLs and routes  
-   -> These concepts are essential for developing Flask web applications as they allow Flask to map web requests to specific functions in your code  
+-> introduction  
+   -> in this lesson, you will take a deeper look at some of the fundamental building blocks of the web that flask leverages to function: urls and routes  
+   -> these concepts are essential for developing flask web applications as they allow flask to map web requests to specific functions in your code  
 
--> What is a URL?  
-   -> URL stands for Uniform Resource Locator, which is a formal name for what we commonly refer to as a web address  
-   -> A URL is how you specify a location for a resource on the internet, whether it's a webpage, image, or file  
-   -> A URL generally consists of several components:  
-      -> Protocol: This specifies how the request should be made (e.g., `http://` or `https://`)  
-      -> Host: The domain name of the server handling the request (e.g., `example.com`)  
-      -> Path: The specific resource on the server you are requesting (e.g., `/about`, `/contact`)  
+-> what is a url?  
+   -> url stands for uniform resource locator, which is a formal name for what we commonly refer to as a web address  
+   -> a url is how you specify a location for a resource on the internet, whether it's a webpage, image, or file  
+   -> a url generally consists of several components:  
+      -> protocol: this specifies how the request should be made (e.g., `http://` or `https://`)  
+      -> host: the domain name of the server handling the request (e.g., `example.com`)  
+      -> path: the specific resource on the server you are requesting (e.g., `/about`, `/contact`)  
 
--> Requests and Responses  
-   -> A user's browser sends a request to the web server when they visit a URL  
-   -> The request asks for a specific resource identified by the URL path  
-   -> For instance, if a user goes to `http://example.com/about`, their browser sends a request asking for the "About" page  
-   -> The server processes the request and returns a response, which could be a webpage, image, or data (e.g., JSON)  
-   -> Think of it like a game of sending a message (request) through a tin-can phone, where the server responds back with the requested information  
+-> requests and responses  
+   -> a user's browser sends a request to the web server when they visit a url  
+   -> the request asks for a specific resource identified by the url path  
+   -> for instance, if a user goes to `http://example.com/about`, their browser sends a request asking for the "about" page  
+   -> the server processes the request and returns a response, which could be a webpage, image, or data (e.g., json)  
+   -> think of it like a game of sending a message (request) through a tin-can phone, where the server responds back with the requested information  
 
--> Paths  
-   -> The path in the URL specifies the location of the resource you're requesting from the server  
-   -> For example, in `http://example.com/about`, the path is `/about`  
-   -> If you visit `http://example.com/`, the path is `/`, representing the root or home page  
-   -> Paths are critical because they tell the server exactly where to find the requested resource in the application code  
-   -> In Flask, paths help determine which code should be executed to generate the correct response for the user  
+-> paths  
+   -> the path in the url specifies the location of the resource you're requesting from the server  
+   -> for example, in `http://example.com/about`, the path is `/about`  
+   -> if you visit `http://example.com/`, the path is `/`, representing the root or home page  
+   -> paths are critical because they tell the server exactly where to find the requested resource in the application code  
+   -> in flask, paths help determine which code should be executed to generate the correct response for the user  
 
--> Routes and View Functions in Flask  
-   -> In Flask, a route is a mapping between a URL path and a function that handles the request  
-   -> Routes are how Flask knows which function to run when a user requests a specific path on the website  
-   -> Flask routes are defined using decorators, which are shorthand for creating URL-to-function mappings  
-   -> A route in Flask is typically defined with the `@app.route()` decorator followed by the path and a function to handle the request  
-   -> Example:  
+-> routes and view functions in flask  
+   -> in flask, a route is a mapping between a url path and a function that handles the request  
+   -> routes are how flask knows which function to run when a user requests a specific path on the website  
+   -> flask routes are defined using decorators, which are shorthand for creating url-to-function mappings  
+   -> a route in flask is typically defined with the `@app.route()` decorator followed by the path and a function to handle the request  
+   -> example:  
      ```python  
      @app.route('/about')  
      def about_us():  
-         return "<p>A blurb about this website</p>"  
+         return "<p>a blurb about this website</p>"  
      ```  
-   -> In this example, the `/about` path is mapped to the `about_us()` view function  
-   -> When the user visits `http://localhost:5000/about`, Flask will call the `about_us()` function and return its response  
-   -> Instead of using decorators, you could also use `app.add_url_rule()` to add routes programmatically:  
+   -> in this example, the `/about` path is mapped to the `about_us()` view function  
+   -> when the user visits `http://localhost:5000/about`, flask will call the `about_us()` function and return its response  
+   -> instead of using decorators, you could also use `app.add_url_rule()` to add routes programmatically:  
      ```python  
      app.add_url_rule('/about', 'about_us', about_us)  
      ```  
-   -> The `add_url_rule()` method takes three arguments: the path, an endpoint name (optional), and the view function to call when the path is requested  
+   -> the `add_url_rule()` method takes three arguments: the path, an endpoint name (optional), and the view function to call when the path is requested  
 
--> Endpoint Names  
-   -> An endpoint name is a symbolic name that refers to the view function  
-   -> Flask automatically assigns the name of the view function as the endpoint, but you can explicitly set it using the `endpoint` argument in `add_url_rule()`  
-   -> For example:  
+-> endpoint names  
+   -> an endpoint name is a symbolic name that refers to the view function  
+   -> flask automatically assigns the name of the view function as the endpoint, but you can explicitly set it using the `endpoint` argument in `add_url_rule()`  
+   -> for example:  
      ```python  
      app.add_url_rule('/about', endpoint='about_us', view_func=about_us)  
      ```  
-   -> This is useful for generating URLs for a specific route programmatically or referring to the route from other parts of the app  
+   -> this is useful for generating urls for a specific route programmatically or referring to the route from other parts of the app  
 
--> HTML Responses  
-   -> In Flask, view functions usually return HTML content as part of the response  
-   -> For example, in the `about_us()` function, the string `"<p>A blurb about this website</p>"` will be displayed as HTML in the browser  
-   -> Flask uses Jinja templating (to be covered in later lessons) to dynamically generate HTML responses, making it easy to create complex, data-driven webpages  
+-> html responses  
+   -> in flask, view functions usually return html content as part of the response  
+   -> for example, in the `about_us()` function, the string `"<p>a blurb about this website</p>"` will be displayed as html in the browser  
+   -> flask uses jinja templating (to be covered in later lessons) to dynamically generate html responses, making it easy to create complex, data-driven webpages  
 
--> Summary: What are URLs and Routes?  
-   -> URL stands for Uniform Resource Locator, and it's a web address used to locate a resource on the internet  
-   -> A URL has three main parts:  
-      -> The protocol (`http://` or `https://`)  
-      -> The host (domain name, e.g., `example.com`)  
-      -> The path (`/about`, `/contact`)  
-   -> In Flask, routes are mappings between paths and view functions, allowing Flask to know which function to call when a user requests a specific URL  
-   -> You can define routes in Flask using the `@app.route()` decorator, or by using the `app.add_url_rule()` method  
-   -> Flask routes handle user requests and return appropriate responses, often HTML content, to the browser  
+-> summary: what are urls and routes?  
+   -> url stands for uniform resource locator, and it's a web address used to locate a resource on the internet  
+   -> a url has three main parts:  
+      -> the protocol (`http://` or `https://`)  
+      -> the host (domain name, e.g., `example.com`)  
+      -> the path (`/about`, `/contact`)  
+   -> in flask, routes are mappings between paths and view functions, allowing flask to know which function to call when a user requests a specific url  
+   -> you can define routes in flask using the `@app.route()` decorator, or by using the `app.add_url_rule()` method  
+   -> flask routes handle user requests and return appropriate responses, often html content, to the browser  
 
--> Example Code for `/about` route  
+-> example code for `/about` route  
    ```python  
    @app.route('/about')  
    def about_us():  
-       return "<p>A blurb about this website</p>"  
--> When a user navigates to http://localhost:5000/about, Flask will return the response:
-"<p>A blurb about this website</p>"
+       return "<p>a blurb about this website</p>"  
+-> when a user navigates to http://localhost:5000/about, flask will return the response:  
+"<p>a blurb about this website</p>"  
